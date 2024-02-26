@@ -57,18 +57,17 @@ public:
 };
 
 // Exaplanation for Beginners :
-/* 
-* Meaning of : priority_queue<int,vector<int>,greater<int> > pq(nums.begin(),nums.end());
 
-priority_queue<int, vector<int>, greater<int>>: This part declares a priority_queue data structure where:
-    int is the type of elements stored in the queue.
-    vector<int> is the underlying container used to store the elements.
-    greater<int> is the comparator used to determine the order of elements. 
-    In this case, it means the queue will store elements in ascending order (from smallest to largest). 
-    If not specified, the default comparator (less<int>) is used, which stores elements in descending order (from largest to smallest).
-pq(nums.begin(), nums.end()): This initializes the priority_queue pq with elements from the range [nums.begin(), nums.end()). 
-It effectively constructs the priority queue with the elements of the nums vector. The elements are inserted into the queue, 
-and the queue maintains its order based on the specified comparator (greater<int> in this case).
+// * Meaning of : priority_queue<int,vector<int>,greater<int> > pq(nums.begin(),nums.end());
 
-* One push and pop operation takes time = logn individually.  
-*/ 
+// priority_queue<int, vector<int>, greater<int>>: This part declares a priority_queue data structure where:
+//     int is the type of elements stored in the queue.
+//     vector<int> is the underlying container used to store the elements.
+//     greater<int> is the comparator used to determine the order of elements. 
+//     In this case, it means the queue will store elements in ascending order (from smallest to largest). 
+//     If not specified, the default comparator (less<int>) is used, which stores elements in descending order (from largest to smallest).
+// pq(nums.begin(), nums.end()): This initializes the priority_queue pq with elements from the range [nums.begin(), nums.end()). 
+// It effectively constructs the priority queue with the elements of the nums vector. The elements are inserted into the queue, 
+// and the queue maintains its order based on the specified comparator (greater<int> in this case).
+
+// * One push and pop operation takes time = logn individually.  
